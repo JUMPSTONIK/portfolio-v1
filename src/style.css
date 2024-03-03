@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3{
+  font-family: "Ibarra Real Nova", serif;
+}
+
+h1 {
+  @apply font-bold text-[3.125rem] leading-[3.125rem] ;
+}
+
+h2{
+  @apply font-bold text-[2.5rem] leading-[2.625rem]
+}
+
+h3{
+  @apply font-normal text-[2rem] leading-[2.25rem]
+}
+
+.font-body-1{
+  @apply font-normal text-[1rem] leading-[1.875rem]
+}
+.font-body-2{
+  @apply font-normal text-[0.9375rem] leading-[1.875rem]
+}
+
+.base-container{
+  @apply w-screen flex justify-center xl:px-[10.25rem]
+}
+
