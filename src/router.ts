@@ -1,6 +1,5 @@
 // src/router.js
 import { createRouter, createWebHistory } from 'vue-router';
-import App from './App.vue'
 import Home from './views/Home.vue';
 import Portfolio from './views/Portfolio.vue';
 import ContactMe from './views/ContactMe.vue';
