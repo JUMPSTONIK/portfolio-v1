@@ -35,3 +35,12 @@ h3{
   @apply w-screen flex justify-center xl:px-[10.25rem]
 }
 
+label {
+  color: rgb(51, 50, 61);
+  font-family: Public Sans;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left
+}
