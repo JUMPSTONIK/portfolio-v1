@@ -18,6 +18,7 @@ const routes = [
     path: '/contact-me',
     component: ContactMe,
   },
+  { path: '/:pathMatch(.*)*', name: 'NotFound', component: Home },
 ];
 
 const router = createRouter({
