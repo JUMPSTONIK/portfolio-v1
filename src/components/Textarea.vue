@@ -17,7 +17,9 @@ const wasTouched = ref(false);
       :class="{'outline-error': wasTouched && model}"
       @click="wasTouched = true"
       :placeholder="`Insert your ${to.toLowerCase()} here…`"
+      :name="to"
       v-model="model"
+      rows="5"
     />
     <p class=" text-error" v-if="wasTouched && !model">This field is required</p>
   </div>

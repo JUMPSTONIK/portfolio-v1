@@ -6,6 +6,7 @@ const isHovered = ref(false)
 
 const { text, isPrimary, isDisabled, showIcon } = defineProps({
     text: String,
+    type: {type:  String as () => "button" | "submit" | "reset" | undefined, default: 'button'},
     isPrimary: { type: Boolean, default: true },
     isDisabled: { type: Boolean, default: false },
     showIcon: { type: Boolean, default: false },
@@ -38,7 +39,7 @@ const handleMouseOut = () => {
 </script>
 
 <template>
-    <button @mouseover="handleMouseOver" @mouseout="handleMouseOut">
+    <button :type="type" @mouseover="handleMouseOver" @mouseout="handleMouseOut">
         <div :class="btnClasses">
 
             <div v-if="showIcon" class="base w-[45px]">
