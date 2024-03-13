@@ -45,7 +45,7 @@ const message = ref<string>('');
                 <Input v-model="email" :type="'email'" :to="'Email Address'"/>
                 <Textarea v-model="message" :type="'text'" :to="'Message'" />
                 <!-- hCaptcha Spam Protection -->
-                <div class="h-captcha" data-captcha="true"></div>
+                <div class="h-captcha" data-captcha="true" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
                 <Button :type="'submit'" class=" w-[200px]" :text="'send message'"/>
             </form>
         </div>
