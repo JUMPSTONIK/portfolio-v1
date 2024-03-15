@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "vue": "^3.4.19",
+    "vue-click-outside": "^1.1.0",
     "vue-router": "^4.3.0",
-    "vuetify": "^3.5.6"
+    "vuetify": "^3.4.0-beta.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

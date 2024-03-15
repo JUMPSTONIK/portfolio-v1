@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import { reactive } from 'vue';
 
-const {drawer} = defineProps<{drawer: boolean}>()
+const drawerProp = defineProps<{
+    drawer: boolean;
+}>()
+
+const onUpdateDrawer = defineEmits()
+
+console.log('Drawer prop:', drawerProp.drawer);
 
 const items = reactive([
   { name: "Home", route: "/", icon: "mdi-home" },
@@ -11,7 +17,7 @@ const items = reactive([
 </script>
 
 <template>
-    <v-navigation-drawer :value="drawer" @update:value="drawer = $event" location="right" temporary>
+    <v-navigation-drawer class="md:hidden" :style="{ transform: drawerProp.drawer ? 'none' : 'translateX(110%)' }" :value="drawerProp.drawer" @update:value="onUpdateDrawer" location="right" temporary>
         <div class="bg-primary-grayish h-full p-3 pt-5">
             <v-list-item v-for="item in items" :key="item.name">
                 <div class="flex gap-1 justify-start items-center">
@@ -22,6 +28,3 @@ const items = reactive([
         </div>
     </v-navigation-drawer>
 </template>
-
-
-<style scoped></style>
