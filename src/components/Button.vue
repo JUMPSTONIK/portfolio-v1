@@ -39,7 +39,7 @@ const handleMouseOut = () => {
 </script>
 
 <template>
-    <button :type="type" @mouseover="handleMouseOver" @mouseout="handleMouseOut">
+    <button class="max-w-fit" :type="type" @mouseover="handleMouseOver" @mouseout="handleMouseOut">
         <div :class="btnClasses">
 
             <div v-if="showIcon" class="base w-[45px]">
