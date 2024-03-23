@@ -4,9 +4,9 @@ import NavElement from './NavElement.vue';
 </script>
 
 <template>
-    <footer class=" bg-primary-grayish base-container">
+    <footer class=" bg-primary-grayish w-full">
         <div
-            class=" max-w-[1440px] w-full flex flex-col md:flex-row gap-10 md:gap-12 xl:px-0 items-center justify-center py-14 md:px-10 md:py-6">
+            class="base-container w-full flex flex-col md:flex-row gap-10 md:gap-12 items-center justify-center py-14 md:px-10 md:py-6 lg:px-8">
             <Icon :icon="'logo'" class="text-white " />
             <div class="flex flex-col md:flex-row gap-9 md:gap-11 items-center md:mr-auto">
                 <NavElement :type="false" :route="'/'">Home</NavElement>

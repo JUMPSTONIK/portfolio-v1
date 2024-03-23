@@ -6,7 +6,7 @@ const { height } = useWindowSize();
 </script>
 
 <template>
-    <div class="px-8 flex flex-col">
+    <div class="px-8 flex flex-col base-container">
         <section class="flex flex-col relative">
             <img class="w-full md:hidden" src="./../assets/homepage/mobile/image-homepage-hero@2x.jpg" alt="" />
             <img class="w-full hidden md:block xl:hidden" src="./../assets/homepage/tablet/image-homepage-hero@2x.jpg"

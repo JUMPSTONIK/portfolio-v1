@@ -16,14 +16,13 @@ const close = () =>{
 </script>
 
 <template>
-  <v-layout wrap>
-    <v-flex>
+  <v-layout wrap class="w-screen flex-col">
+
       <NavBar @toggleDrawer="drawer = !drawer" />
-      <main @click="close()" class="base-container">
+      <main @click="close()">
         <router-view />
       </main>
       <Footer @click="close()" />
-    </v-flex>
     <NavigationDrawer :drawer="drawer" onUpdateDrawer="val => drawer = val"/>
   </v-layout>
 </template>
