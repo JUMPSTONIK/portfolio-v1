@@ -32,7 +32,7 @@ h3{
 }
 
 .base-container{
-  @apply w-screen flex justify-center xl:px-[10.25rem] max-w-[1440px] mx-auto;
+  @apply w-screen flex xl:px-[10.25rem] max-w-[1440px] mx-auto;
 }
 
 label {

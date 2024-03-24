@@ -13,7 +13,7 @@ const message = ref<string>('');
 
 <template>
     <div
-        class="max-w-[1440px] w-full flex flex-col gap-6 items-start justify-start px-8 pb-20 md:pb-24 md:gap-12 md:px-10 md:py-6 xl:px-0 ">
+        class="base-container flex flex-col gap-6 items-start justify-start px-8 pb-20 md:pb-24 md:gap-12 md:px-10 md:py-6 xl:px-0 ">
         <v-divider class="border-opacity-100" />
         <div class="w-full xl:flex">
             <h1 class="xl:w-1/2">Get in Touch</h1>
