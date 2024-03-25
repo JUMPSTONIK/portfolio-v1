@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from './views/Home.vue';
 import Portfolio from './views/Portfolio.vue';
 import ContactMe from './views/ContactMe.vue';
+import ProjectDetails from './components/ProjectPreview.vue'
 // Create a Home component
 
 const routes = [
@@ -13,6 +14,10 @@ const routes = [
   {
     path: '/portfolio',
     component: Portfolio,
+    children: [{
+      path: '/:project',
+      component: ProjectDetails,
+    }]
   },
   {
     path: '/contact-me',

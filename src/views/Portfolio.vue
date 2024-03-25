@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="base-container">
         <h1>portfolio</h1>
     </div>
 </template>
