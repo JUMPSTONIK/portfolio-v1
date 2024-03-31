@@ -1,25 +1,66 @@
 import { defineStore } from 'pinia'
+import pass from './../assets/images/password-generator/password-generator-preview.jpg'
 
-// You can name the return value of `defineStore()` anything you want,
-// but it's best to use the name of the store and surround it with `use`
-// and `Store` (e.g. `useUserStore`, `useCartStore`, `useProductStore`)
-// the first argument is a unique id of the store across your application
+interface Project {
+    image: string;
+    alt: string;
+    title: string;
+    technologies: string[];
+    description: string;
+    name: string;
+    background: string;
+    website: string;
+    staticPreviews: string[];
+    position: number;
+}
+
+interface ProjectsState {
+    projects: Record<string, Project>;
+}
+
 export const useProjectsStore = defineStore('projects', {
-    state: () => ({ projects: {
-        project1: {
-            image: './../assets/images/password-generator-preview.jpg', 
-            alt: 'password generator', 
-            title: 'Password generator', 
-            technologies: ['HTML5', 'CSS3', 'REACT', 'Typescript', 'SASS', 'Redux'], 
-            description: '', 
-            project: 'pass-generator',
-            background: '',
-            website: 'https://jumpstonik-password-generator.netlify.app',
-            staticPreviews: [],
+    state: (): ProjectsState => ({
+        projects: {
+            project1: {
+                image: pass,
+                alt: 'password generator',
+                title: 'Password generator',
+                technologies: ['HTML5', 'CSS3', 'REACT', 'Typescript', 'SASS', 'Redux'],
+                description: `This app will be an excellent test of your HTML, CSS, and JS skills. You'll build custom form controls and use JavaScript to generate random passwords.`,
+                name: 'pass-generator',
+                background: '',
+                website: 'https://jumpstonik-password-generator.netlify.app',
+                staticPreviews: ['./../assets/images/password-generator/mobile-version-password.webp', './../assets/images/password-generator/tablet-password.webp'],
+                position: 0
+            },
+            project2: {
+                image: pass,
+                alt: 'password generator',
+                title: 'Password generator',
+                technologies: ['HTML5', 'CSS3', 'REACT', 'Typescript', 'SASS', 'Redux'],
+                description: `This app will be an excellent test of your HTML, CSS, and JS skills. You'll build custom form controls and use JavaScript to generate random passwords.`,
+                name: 'pass-generator',
+                background: '',
+                website: 'https://jumpstonik-password-generator.netlify.app',
+                staticPreviews: ['./../assets/images/password-generator/mobile-version-password.webp', './../assets/images/password-generator/tablet-password.webp'],
+                position: 1
+            },
+            project3: {
+                image: pass,
+                alt: 'password generator',
+                title: 'Password generator',
+                technologies: ['HTML5', 'CSS3', 'REACT', 'Typescript', 'SASS', 'Redux'],
+                description: `This app will be an excellent test of your HTML, CSS, and JS skills. You'll build custom form controls and use JavaScript to generate random passwords.`,
+                name: 'pass-generator',
+                background: '',
+                website: 'https://jumpstonik-password-generator.netlify.app',
+                staticPreviews: ['./../assets/images/password-generator/mobile-version-password.webp', './../assets/images/password-generator/tablet-password.webp'],
+                position: 2
+            }
         }
-    } }),
+    }),
     getters: {
-      projects: (state) => state.projects,
-      project: (state) => {return (name:string) => state.projects[name] || {}}, // returns the first
+        allProjects: (state) => state.projects,
+        project: (state) => (name: string): Project | undefined => state.projects[name],
     },
 })

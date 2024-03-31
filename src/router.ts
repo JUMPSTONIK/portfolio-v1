@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import Portfolio from './views/Portfolio.vue';
 import ContactMe from './views/ContactMe.vue';
 import ProjectDetails from './components/ProjectPreview.vue'
+import * as components from 'vuetify/components';
 // Create a Home component
 
 const routes = [
@@ -18,6 +19,10 @@ const routes = [
       path: '/:project',
       component: ProjectDetails,
     }]
+  },
+  {
+    path: '/experience',
+    component:  () => import('./views/Experience.vue')
   },
   {
     path: '/contact-me',

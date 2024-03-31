@@ -11,6 +11,7 @@ import NavElement from './NavElement.vue';
             <div class="hidden md:flex md:gap-[2.625rem]">
                 <NavElement :type="true" :route="'/'">Home</NavElement>
                 <NavElement :type="true" :route="'/portfolio'">Portfolio</NavElement>
+                <NavElement :type="true" :route="'/experience'">Work Experience</NavElement>
                 <NavElement :type="true" :route="'/contact-me'">Contact me</NavElement>
             </div>
             <Icon class=" md:hidden" :icon="'menu'" @click="$emit('toggleDrawer')" />
