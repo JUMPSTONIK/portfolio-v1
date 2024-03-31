@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProjectPreview from "../components/ProjectPreview.vue";
+// import ProjectPreview from "../components/ProjectPreview.vue";
 import { useProjectsStore } from "../store/projects";
 import WorkingOnIt from "../components/WorkingOnIt.vue";
 
