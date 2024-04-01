@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Button from "../components/Button.vue";
+import Interested from "./../components/Interested.vue"
 import { useWindowSize } from "@vueuse/core";
 
 const { height } = useWindowSize();
@@ -52,14 +53,7 @@ const { height } = useWindowSize();
                 <v-divider class="border-opacity-100 mt-7 md:mt-4" />
             </div>
         </section>
-        <section class="flex flex-col gap-10 pt-[115px] pb-20 items-center lg:flex-row lg:justify-between">
-            <h2 class="text-center lg:max-w-[350px]">
-                Interested in doing a project together?
-            </h2>
-            <router-link :to="'/contact-me'">
-                <Button :text="'CONTACT ME'" :isPrimary="false" />
-            </router-link>
-        </section>
+        <Interested/>
     </div>
 </template>
 

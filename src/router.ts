@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from './views/Home.vue';
 import Portfolio from './views/Portfolio.vue';
 import ContactMe from './views/ContactMe.vue';
-import ProjectDetails from './components/ProjectPreview.vue'
+import ProjectDetails from './views/ProjectDetails.vue'
 
 const routes = [
   {
@@ -13,10 +13,10 @@ const routes = [
   {
     path: '/portfolio',
     component: Portfolio,
-    children: [{
-      path: '/:project',
+  },
+  {
+    path: '/project/:key',
       component: ProjectDetails,
-    }]
   },
   {
     path: '/experience',

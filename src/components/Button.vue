@@ -33,7 +33,7 @@ const iconClasses = computed(() => ({
 
 <template>
   <button
-    class="max-w-fit"
+    class="max-w-fit min-w-40"
     :type="type"
   >
     <div class="flex" :class="btnClasses">
