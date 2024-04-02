@@ -18,7 +18,7 @@ const close = () =>{
 <template>
   <v-layout wrap class="w-screen flex-col">
 
-      <NavBar @toggleDrawer="drawer = !drawer" />
+      <NavBar @toggleDrawer="drawer = !drawer" @close="close()"/>
       <main @click="close()">
         <router-view />
       </main>

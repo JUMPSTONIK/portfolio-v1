@@ -7,10 +7,13 @@ import NavElement from './NavElement.vue';
     <footer class=" bg-primary-grayish w-full">
         <div
             class="base-container w-full flex flex-col md:flex-row gap-10 md:gap-12 items-center justify-center py-14 md:px-10 md:py-6 lg:px-8">
-            <Icon :icon="'logo'" class="text-white " />
+            <router-link :to="'/'">
+                <Icon :icon="'logo'" class="text-white " />
+            </router-link>
             <div class="flex flex-col md:flex-row gap-9 md:gap-11 items-center md:mr-auto">
                 <NavElement :type="false" :route="'/'">Home</NavElement>
                 <NavElement :type="false" :route="'/portfolio'">Portfolio</NavElement>
+                <NavElement :type="false" :route="'/experience'">Work Experience</NavElement>
                 <NavElement :type="false" :route="'/contact-me'">Contact me</NavElement>
             </div>
             <div class=" flex gap-[15px]">

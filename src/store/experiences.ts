@@ -52,13 +52,15 @@ export const useExperienceStore = defineStore('experiences', {
                 As part of the program, I actively participated in maintaining a few projects and providing support to other team members. This experience allowed me to enhance my problem-solving and teamwork skills while gaining valuable practical experience in working on real-world projects.`,
                 position: 4
             },
-            // experience1: {
-            //     image: '',
-            //     alt: '',
-            //     title: '',
-            //     description: ``,
-            //     position: 0
-            // },
+            experience6: {
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSspLhOODVYwkVZXsc0WC58nmZ8_tEcU3o-L-wyFzRhJQ&s',
+                alt: 'startrack logo',
+                title: 'Frontend web developer',
+                description: `I successfully developed a robust internal app that retrieved data from an API and incorporated complex app logic using the powerful technology stack of MobX, CSS3, React.js, JavaScript, HTML5, and TypeScript. Under the mentorship of my team lead, I gained hands-on experience in programming, problem-solving, and executing projects from start to finish making several improvements in their tracking platform and design system.
+
+                To solidify my knowledge and skillset, I completed various certifications in the technology stack, enabling me to become proficient in building web applications. This experience helped me to hone my engineering mindset, allowing me to analyze complex problems and develop effective solutions.`,
+                position: 5
+            },
         }
     }),
     getters: {

@@ -11,8 +11,8 @@ console.log('Drawer prop:', drawerProp.drawer);
 
 const items = reactive([
   { name: "Home", route: "/", icon: "mdi-home" },
-  { name: "Portfolio", route: "/portfolio", icon: "mdi-domain" },
-  { name: "Work Experience", route: "/experience", icon: "mdi-briefcase" },
+  { name: "Portfolio", route: "/portfolio", icon: "mdi-briefcase" },
+  { name: "Work Experience", route: "/experience", icon: "mdi-domain" },
   { name: "Contact me", route: "/contact-me", icon: "mdi-email" },
 ]);
 </script>
