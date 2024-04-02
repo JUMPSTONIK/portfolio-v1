@@ -24,7 +24,7 @@ const { height } = useWindowSize();
             </div>
         </section>
         <section id="about-me" class="flex flex-col gap-8 mt-20 md:flex-row md:gap-20 lg:gap-24">
-            <img class="w-full md:w-[40%] lg:w-[50%] object-cover" src="./../assets/Josue López.jpg" alt="" />
+            <img class="w-full md:w-[40%] lg:w-[50%] object-cover" src="./../assets/Josue_Lopez.jpg" alt="" />
             <v-divider v-if="height < 768" class="border-opacity-100 md:hidden" />
             <div class="flex flex-col gap-7 md:w-[60%] md:pt-12 lg:w-[50%]">
                 <h2>About Me</h2>
