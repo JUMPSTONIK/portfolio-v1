@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import Button from "./Button.vue";
 
-const { image, alt, title, description, name, position, hideButton } = defineProps([
+const { image, alt, title, company, jobType, description, name, position, hideButton } = defineProps([
   "image",
   "alt",
   "title",
+  "company",
+  "jobType",
   "description",
   "name",
   "position",
@@ -20,7 +22,8 @@ const { image, alt, title, description, name, position, hideButton } = definePro
       <v-divider class="border-opacity-100 md:hidden" />
       <div class="flex flex-col gap-[25px] md:items-center">
         <h1>{{ title }}</h1>
-        <p class="font-body-2">{{ description }}</p>
+        <h2 v-if="company && jobType" class="text-2xl">{{ company }} - {{ jobType }}</h2>
+        <p class="font-body-2 text-justify">{{ description }}</p>
         <router-link v-if="!hideButton" class=" self-start" :to="`./portfolio/${name}`">
           <Button :text="'VIEW PROJECT'" :isPrimary="false" />
         </router-link>

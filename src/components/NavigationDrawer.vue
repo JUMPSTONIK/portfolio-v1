@@ -15,6 +15,8 @@ const items = reactive([
   { name: "Work Experience", route: "/experience", icon: "mdi-domain" },
   { name: "Contact me", route: "/contact-me", icon: "mdi-email" },
 ]);
+
+
 </script>
 
 <template>

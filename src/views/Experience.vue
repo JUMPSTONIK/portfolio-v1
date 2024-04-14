@@ -14,6 +14,8 @@ const store = useExperienceStore();
       :description="project.description"
       :image="project.image"
       :title="project.title"
+      :company="project.company"
+      :jobType="project.jobType"
       :position="project.position"
       :hideButton="true"
     />
